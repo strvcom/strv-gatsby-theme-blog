@@ -1,0 +1,24 @@
+{
+  "name": "strv-gatsby-theme-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Konstantin Lebedev (https://github.com/koss-lebedev)",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.6.0"
+  },
+  "dependencies": {
+    "gatsby-plugin-react-helmet": "^3.1.18",
+    "gatsby-plugin-sharp": "^2.3.10",
+    "gatsby-plugin-typescript": "^2.1.23",
+    "gatsby-remark-images": "^3.1.39",
+    "gatsby-source-filesystem": "^2.1.43",
+    "gatsby-transformer-remark": "^2.6.45",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-helmet": "^5.0.14"
+  }
+}
