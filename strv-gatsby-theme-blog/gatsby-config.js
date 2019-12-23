@@ -45,5 +45,8 @@ module.exports = themeOptions => ({
     {
       resolve: `gatsby-plugin-sitemap`,
     },
+    {
+      resolve: `gatsby-plugin-catch-links`,
+    },
   ],
 })

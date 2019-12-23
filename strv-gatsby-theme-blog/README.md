@@ -49,3 +49,4 @@ yarn gatsby develop
 - `gatsby-source-filesystem` for sourcing data from file system
 - `gatsby-transformer-remark` for Markdown processing
 - `gatsby-plugin-sitemap` for sitemap generation
+- `gatsby-plugin-catch-links` - replaces local links with gatsby link

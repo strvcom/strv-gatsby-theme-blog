@@ -8,6 +8,7 @@
     "gatsby": "^2.6.0"
   },
   "dependencies": {
+    "gatsby-plugin-catch-links": "^2.1.21",
     "gatsby-plugin-react-helmet": "^3.1.18",
     "gatsby-plugin-sharp": "^2.3.10",
     "gatsby-plugin-sitemap": "^2.2.24",
