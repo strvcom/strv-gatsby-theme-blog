@@ -7,7 +7,7 @@
   Workspace for strv-gatsby-theme-blog
 </h1>
 
-For theme documentation, please refer to [theme README.md](strv-gatsby-theme-blog/README.md)
+For theme documentation, please refer to [theme README](strv-gatsby-theme-blog/README.md)
 
 ### Workspaces
 
