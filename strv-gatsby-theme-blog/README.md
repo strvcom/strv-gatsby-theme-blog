@@ -1,6 +1,8 @@
-# The smallest possible Gatsby theme
+# strv-gatsby-theme-blog
 
 ## Quick Start
+
+Install the theme and its dependencies:
 
 ```shell
 mkdir my-site
@@ -10,8 +12,13 @@ yarn init
 yarn add gatsby react react-dom strv-gatsby-theme-blog
 ```
 
-Then add the theme to your `gatsby-config.js`. We'll use the long form
-here for education purposes.
+Create directories for blog markdown files and assets, for example:
+
+```shell
+mkdir -p content/{blog,assets}
+```
+
+Add the theme to your `gatsby-config.js`:
 
 ```javascript
 module.exports = {
@@ -27,28 +34,16 @@ module.exports = {
 }
 ```
 
-That's it, you can now run your gatsby site using
+Run your gatsby site:
 
 ```shell
 yarn gatsby develop
 ```
 
-Note that this site doesn't _do_ anything, so you're see a missing
-resources error. Create a simple page in `src/pages/index.js` to see a
-page on the root url.
+## What's included
 
-```javascript
-import React from 'react'
-
-export default () => <div>My Site!</div>
-```
-
-## Doing more with themes
-
-You can use this as a place to start when developing themes. I
-generally suggest using [yarn
-workspaces](https://yarnpkg.com/lang/en/docs/workspaces/) like the
-[gatsby-theme-examples repo
-does](https://github.com/ChristopherBiscardi/gatsby-theme-examples),
-but using `yarn link` or `npm link` is a viable alternative if you're
-not familiar with workspaces.
+- `gatsby-plugin-typescript`
+- `gatsby-plugin-react-helmet` for working with <head> elements
+- `gatsby-remark-images` & `gatsby-plugin-sharp` for image processing
+- `gatsby-source-filesystem` for sourcing data from file system
+- `gatsby-transformer-remark` for Markdown processing
