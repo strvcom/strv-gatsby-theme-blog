@@ -1,4 +1,7 @@
 module.exports = themeOptions => ({
+  siteMetadata: {
+    siteUrl: themeOptions.siteUrl,
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-typescript`,
@@ -38,6 +41,9 @@ module.exports = themeOptions => ({
     },
     {
       resolve: `gatsby-plugin-sharp`,
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
     },
   ],
 })

@@ -28,6 +28,7 @@ module.exports = {
       options: {
         contentPath: 'content/blog',
         assetPath: 'content/assets',
+        siteUrl: 'http://example.com', // required
       },
     },
   ],
@@ -47,3 +48,4 @@ yarn gatsby develop
 - `gatsby-remark-images` & `gatsby-plugin-sharp` for image processing
 - `gatsby-source-filesystem` for sourcing data from file system
 - `gatsby-transformer-remark` for Markdown processing
+- `gatsby-plugin-sitemap` for sitemap generation
