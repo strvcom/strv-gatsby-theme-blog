@@ -24,9 +24,13 @@ module.exports = themeOptions => ({
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        plugins: [
+        defaultLayouts: {
+          default: './src/templates/article.tsx',
+        },
+        extensions: ['.mdx', '.md'],
+        gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {

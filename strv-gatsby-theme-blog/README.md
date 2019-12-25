@@ -47,6 +47,6 @@ yarn gatsby develop
 - `gatsby-plugin-react-helmet` for working with <head> elements
 - `gatsby-remark-images` & `gatsby-plugin-sharp` for image processing
 - `gatsby-source-filesystem` for sourcing data from file system
-- `gatsby-transformer-remark` for Markdown processing
+- `gatsby-plugin-mdx` for Markdown and MDX processing
 - `gatsby-plugin-sitemap` for sitemap generation
 - `gatsby-plugin-catch-links` - replaces local links with gatsby link

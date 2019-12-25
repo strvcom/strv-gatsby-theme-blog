@@ -8,14 +8,16 @@
     "gatsby": "^2.6.0"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^1.5.3",
+    "@mdx-js/react": "^1.5.3",
     "gatsby-plugin-catch-links": "^2.1.21",
+    "gatsby-plugin-mdx": "^1.0.64",
     "gatsby-plugin-react-helmet": "^3.1.18",
     "gatsby-plugin-sharp": "^2.3.10",
     "gatsby-plugin-sitemap": "^2.2.24",
     "gatsby-plugin-typescript": "^2.1.23",
     "gatsby-remark-images": "^3.1.39",
     "gatsby-source-filesystem": "^2.1.43",
-    "gatsby-transformer-remark": "^2.6.45",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {

@@ -1,32 +1,29 @@
 import React, { SFC } from 'react'
 import { graphql } from 'gatsby'
+import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
 
 type MarkdownRemark = {
   frontmatter: {
     title: string
     date: string
   }
-  fields: {
-    slug: string
-  }
-  excerpt: string
-  html: string
+  body: string
 }
 
 type Props = {
   data: {
-    markdownRemark: MarkdownRemark
+    mdx: MarkdownRemark
   }
 }
 
 const ArticleTemplate: SFC<Props> = ({ data }) => {
   return (
     <>
-      <h1>{data.markdownRemark.frontmatter.title}</h1>
+      <h1>{data.mdx.frontmatter.title}</h1>
       <p>
-        <i>Published on {data.markdownRemark.frontmatter.date}</i>
+        <i>Published on {data.mdx.frontmatter.date}</i>
       </p>
-      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+      <MDXRenderer>{data.mdx.body}</MDXRenderer>
     </>
   )
 }
@@ -35,16 +32,12 @@ export default ArticleTemplate
 
 export const pageQuery = graphql`
   query ArticleBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
-      html
+      body
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-      }
-      fields {
-        slug
       }
     }
   }
