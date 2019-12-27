@@ -1,24 +1,21 @@
 import React, { SFC } from 'react'
 import { graphql } from 'gatsby'
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
-
-type MarkdownRemark = {
-  frontmatter: {
-    title: string
-    date: string
-  }
-  body: string
-}
+import ArticleSEO from 'strv-gatsby-theme-blog/components/article-seo'
 
 type Props = {
   data: {
-    mdx: MarkdownRemark
+    mdx: MdxArticle
+    site: {
+      siteMetadata: SiteMetadata
+    }
   }
 }
 
 const ArticleTemplate: SFC<Props> = ({ data }) => {
   return (
     <>
+      <ArticleSEO article={data.mdx} siteMetadata={data.site.siteMetadata} />
       <h1>{data.mdx.frontmatter.title}</h1>
       <p>
         <i>Published on {data.mdx.frontmatter.date}</i>
@@ -38,6 +35,14 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+      }
+      fields {
+        slug
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
   }
