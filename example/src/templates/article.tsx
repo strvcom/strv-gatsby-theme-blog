@@ -1,4 +1,4 @@
-import React, { SFC } from 'react'
+import React, { FC } from 'react'
 import { graphql } from 'gatsby'
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
 import ArticleSEO from 'strv-gatsby-theme-blog/components/article-seo'
@@ -12,7 +12,7 @@ type Props = {
   }
 }
 
-const ArticleTemplate: SFC<Props> = ({ data }) => {
+const ArticleTemplate: FC<Props> = ({ data }) => {
   return (
     <>
       <ArticleSEO article={data.mdx} siteMetadata={data.site.siteMetadata} />

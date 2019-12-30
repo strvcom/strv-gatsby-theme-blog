@@ -51,3 +51,24 @@ yarn gatsby develop
 - `gatsby-plugin-sitemap` for sitemap generation
 - `gatsby-plugin-catch-links` - for replacing local links with gatsby link
 - `gatsby-plugin-canonical-urls` for setting canonical URLs
+
+## Available components
+
+### `ArticleSEO`
+
+Sets SEO meta tags (title and description), and creates a structured data entry for `BlogPosting`.
+
+Usage:
+
+```tsx
+import ArticleSEO from 'strv-gatsby-theme-blog/components/article-seo'
+
+const ArticleTemplate = () => {
+  return (
+    <>
+      <ArticleSEO article={data.mdx} siteMetadata={data.site.siteMetadata} />
+      // rest of article template
+    </>
+  )
+}
+```

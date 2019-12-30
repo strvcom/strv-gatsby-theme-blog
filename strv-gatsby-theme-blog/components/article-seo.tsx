@@ -8,6 +8,7 @@ type Props = {
 
 const ArticleSEO: FC<Props> = ({ article, children, siteMetadata }) => {
   const title = article.frontmatter.title
+  const description = article.frontmatter.description
   const articleUrl = siteMetadata.siteUrl + article.fields.slug
 
   const structuredData = {
@@ -21,7 +22,7 @@ const ArticleSEO: FC<Props> = ({ article, children, siteMetadata }) => {
       '@type': 'ImageObject',
       url: article.frontmatter.thumbnailUrl,
     },
-    description: article.frontmatter.description,
+    description: description,
     author: {
       '@type': 'Person',
       name: article.frontmatter.author,
@@ -39,7 +40,7 @@ const ArticleSEO: FC<Props> = ({ article, children, siteMetadata }) => {
       <script type="application/ld+json">
         {JSON.stringify(structuredData)}
       </script>
-
+      <meta name="description" content={description} />
       {children}
     </Helmet>
   )
