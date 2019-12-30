@@ -24,6 +24,13 @@ module.exports = themeOptions => ({
       },
     },
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: themeOptions.siteUrl,
+        stripQueryString: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {

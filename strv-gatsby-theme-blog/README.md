@@ -49,4 +49,5 @@ yarn gatsby develop
 - `gatsby-source-filesystem` for sourcing data from file system
 - `gatsby-plugin-mdx` for Markdown and MDX processing
 - `gatsby-plugin-sitemap` for sitemap generation
-- `gatsby-plugin-catch-links` - replaces local links with gatsby link
+- `gatsby-plugin-catch-links` - for replacing local links with gatsby link
+- `gatsby-plugin-canonical-urls` for setting canonical URLs
