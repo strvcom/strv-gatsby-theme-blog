@@ -1,0 +1,18 @@
+name: Push Hook
+
+on: [push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install dependencies
+        run: yarn workspace strv-gatsby-theme-blog
+      - name: Lint TS
+        run: yarn workspace strv-gatsby-theme-blog lint:ts
+      - name: Check Types
+        run: yarn workspace strv-gatsby-theme-blog lint:typings
