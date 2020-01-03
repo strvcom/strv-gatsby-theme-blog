@@ -31,6 +31,13 @@ module.exports = themeOptions => ({
       },
     },
     {
+      resolve: `gatsby-plugin-root-import`,
+      options: {
+        components: path.join(__dirname, 'src/components'),
+        common: path.join(__dirname, 'src/common'),
+      },
+    },
+    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {

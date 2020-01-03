@@ -2,6 +2,7 @@ import React, { FC } from 'react'
 import { graphql } from 'gatsby'
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
 import ArticleSEO from 'strv-gatsby-theme-blog/components/article-seo'
+import { MdxArticle, SiteMetadata } from 'strv-gatsby-theme-blog/common/types'
 
 type Props = {
   data: {

@@ -1,4 +1,4 @@
-declare interface MdxArticle {
+export interface MdxArticle {
   frontmatter: {
     title: string
     date: string
@@ -12,6 +12,6 @@ declare interface MdxArticle {
   body: string
 }
 
-declare interface SiteMetadata {
+export interface SiteMetadata {
   siteUrl: string
 }
