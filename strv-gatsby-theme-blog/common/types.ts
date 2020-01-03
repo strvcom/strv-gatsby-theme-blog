@@ -1,4 +1,4 @@
-export interface MdxArticle {
+interface MdxArticle {
   frontmatter: {
     title: string
     date: string
@@ -12,6 +12,8 @@ export interface MdxArticle {
   body: string
 }
 
-export interface SiteMetadata {
+interface SiteMetadata {
   siteUrl: string
 }
+
+export { MdxArticle, SiteMetadata }

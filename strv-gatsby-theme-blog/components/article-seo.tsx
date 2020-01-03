@@ -23,7 +23,7 @@ const ArticleSEO: FC<Props> = ({ article, children, siteMetadata }) => {
       '@type': 'ImageObject',
       url: article.frontmatter.thumbnailUrl,
     },
-    description: description,
+    description,
     author: {
       '@type': 'Person',
       name: article.frontmatter.author,
