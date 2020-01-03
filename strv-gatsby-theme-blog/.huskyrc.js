@@ -1,6 +1,6 @@
 module.exports = {
   hooks: {
-    'pre-commit': 'npm --prefix ../frontend run precommit',
-    'pre-push': 'npm --prefix ../frontend run prepush',
+    'pre-commit': 'yarn workspace strv-gatsby-theme-blog precommit',
+    'pre-push': 'yarn workspace strv-gatsby-theme-blog prepush',
   },
 }

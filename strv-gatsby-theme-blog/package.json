@@ -13,7 +13,9 @@
     "lint:fix": "npm run lint:ts -- --fix && npm run format",
     "lint:ts": "eslint . --ext .ts,.tsx",
     "lint:typings": "tsc --noEmit",
-    "format": "prettier './**/*.{ts,tsx}' --write"
+    "format": "prettier './**/*.{ts,tsx}' --write",
+    "precommit": "lint-staged",
+    "prepush": "yarn lint"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.5.3",
