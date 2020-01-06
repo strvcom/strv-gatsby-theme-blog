@@ -39,7 +39,7 @@
     "@strv/prettier-config": "^1.0.3",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
-    "@types/react-helmet": "^5.0.14",
+    "@types/react-helmet": "^5.0.15",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
     "husky": "^3.1.0",
