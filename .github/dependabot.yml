@@ -1,0 +1,49 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    timezone: America/Los_Angeles
+  open-pull-requests-limit: 3
+  ignore:
+  - dependency-name: gatsby-plugin-sharp
+    versions:
+    - 2.13.3
+    - 2.13.4
+    - 2.14.0
+    - 2.14.1
+    - 2.14.3
+    - 3.0.0
+    - 3.0.1
+    - 3.1.0
+    - 3.1.1
+    - 3.1.2
+    - 3.2.0
+    - 3.2.1
+    - 3.3.0
+    - 3.3.1
+  - dependency-name: gatsby-plugin-catch-links
+    versions:
+    - 2.10.0
+    - 2.9.0
+    - 3.0.0
+    - 3.1.0
+    - 3.2.0
+    - 3.3.0
+  - dependency-name: gatsby-remark-images
+    versions:
+    - 3.10.0
+    - 3.11.0
+    - 3.11.1
+    - 4.0.0
+    - 4.1.0
+    - 4.1.1
+    - 4.2.0
+    - 5.0.0
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
